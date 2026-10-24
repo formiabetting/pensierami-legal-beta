@@ -1,0 +1,18 @@
+:root{color-scheme:light;--ink:#061b30;--orange:#b94b00;--line:rgba(15,23,42,.12)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;background:#f6f9fc}
+.legal-page{min-height:100vh;background:linear-gradient(145deg,#fff,#f6f9fc 60%,#eaf1f8)}
+.legal-page header{height:82px;padding:0 clamp(24px,6vw,90px);display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.legal-page header a{display:flex;align-items:center}
+.legal-page header img{width:46px;height:46px;object-fit:contain}
+.legal-page article{width:min(760px,calc(100% - 40px));margin:0 auto;padding:80px 0 110px}
+.legal-page article>span{color:var(--orange);font-size:11px;font-weight:800;letter-spacing:.16em}
+.legal-page h1{margin:14px 0 24px;font-family:Georgia,serif;font-size:clamp(42px,7vw,72px);font-weight:400;line-height:1.08}
+.legal-page h2{margin:38px 0 8px;font-family:Georgia,serif;font-size:25px;font-weight:400}
+.legal-page p{color:rgba(15,23,42,.75);font-size:15px;line-height:1.75}
+.legal-page .legal-intro{font-size:18px}
+.legal-page a{color:var(--orange);text-decoration:underline;text-underline-offset:3px}
+.legal-page a:focus-visible{outline:3px solid #ff8a2a;outline-offset:4px;border-radius:3px}
+.legal-back{display:inline-block;margin-top:24px}
+@media(max-width:600px){.legal-page header{height:68px}.legal-page article{padding-top:55px;padding-bottom:80px}.legal-page h2{font-size:23px}}
